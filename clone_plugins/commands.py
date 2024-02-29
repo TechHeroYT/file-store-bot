@@ -112,6 +112,7 @@ async def start(client, message):
                          InlineKeyboardButton('🔍 sᴜᴘᴘᴏʀᴛ ɢʀᴏᴜᴘ', url='https://t.me/+ccx-5xVHyro3ZjNl')
                      ]
                     ]
+           )
             return
         except:
             pass
