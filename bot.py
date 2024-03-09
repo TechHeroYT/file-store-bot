@@ -1,6 +1,3 @@
-# Don't Remove Credit @VJ_Botz
-# Subscribe YouTube Channel For Amazing Bot @Tech_VJ
-# Ask Doubt on telegram @KingVJ01
 
 
 import sys
@@ -11,9 +8,7 @@ from pyrogram import idle
 import logging
 import logging.config
 
-# Don't Remove Credit Tg - @VJ_Botz
-# Subscribe YouTube Channel For Amazing Bot https://youtube.com/@Tech_VJ
-# Ask Doubt on telegram @KingVJ01
+
 
 # Get logging configurations
 logging.config.fileConfig('logging.conf')
@@ -27,9 +22,7 @@ logging.basicConfig(
 logging.getLogger("aiohttp").setLevel(logging.ERROR)
 logging.getLogger("aiohttp.web").setLevel(logging.ERROR)
 
-# Don't Remove Credit Tg - @VJ_Botz
-# Subscribe YouTube Channel For Amazing Bot https://youtube.com/@Tech_VJ
-# Ask Doubt on telegram @KingVJ01
+
 
 
 from pyrogram import Client, __version__
@@ -43,9 +36,7 @@ import pytz
 from aiohttp import web
 from TechVJ.server import web_server
 
-# Don't Remove Credit Tg - @VJ_Botz
-# Subscribe YouTube Channel For Amazing Bot https://youtube.com/@Tech_VJ
-# Ask Doubt on telegram @KingVJ01
+
 
 import asyncio
 from pyrogram import idle
@@ -54,9 +45,7 @@ from TechVJ.bot import StreamBot
 from TechVJ.utils.keepalive import ping_server
 from TechVJ.bot.clients import initialize_clients
 
-# Don't Remove Credit Tg - @VJ_Botz
-# Subscribe YouTube Channel For Amazing Bot https://youtube.com/@Tech_VJ
-# Ask Doubt on telegram @KingVJ01
+
 
 
 ppath = "plugins/*.py"
@@ -64,14 +53,11 @@ files = glob.glob(ppath)
 StreamBot.start()
 loop = asyncio.get_event_loop()
 
-# Don't Remove Credit Tg - @VJ_Botz
-# Subscribe YouTube Channel For Amazing Bot https://youtube.com/@Tech_VJ
-# Ask Doubt on telegram @KingVJ01
 
 
 async def start():
     print('\n')
-    print('Initalizing Tech VJ Bot')
+    print('Initalizing Tech HEro Bot')
     bot_info = await StreamBot.get_me()
     StreamBot.username = bot_info.username
     await initialize_clients()
@@ -85,7 +71,7 @@ async def start():
             load = importlib.util.module_from_spec(spec)
             spec.loader.exec_module(load)
             sys.modules["plugins." + plugin_name] = load
-            print("Tech VJ Imported => " + plugin_name)
+            print("Tech HEro Imported => " + plugin_name)
     if Var.ON_HEROKU:
         asyncio.create_task(ping_server())
     me = await StreamBot.get_me()
@@ -102,9 +88,7 @@ async def start():
     print("Bot Started Powered By @VJ_Botz")
     await idle()
 
-# Don't Remove Credit Tg - @VJ_Botz
-# Subscribe YouTube Channel For Amazing Bot https://youtube.com/@Tech_VJ
-# Ask Doubt on telegram @KingVJ01
+
 
 if __name__ == '__main__':
     try:
@@ -113,6 +97,4 @@ if __name__ == '__main__':
         logging.info('Service Stopped Bye 👋')
 
 
-# Don't Remove Credit Tg - @VJ_Botz
-# Subscribe YouTube Channel For Amazing Bot https://youtube.com/@Tech_VJ
-# Ask Doubt on telegram @KingVJ01
+
