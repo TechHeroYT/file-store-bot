@@ -96,16 +96,7 @@ async def start(client, message):
             await asyncio.sleep(AUTO_DELETE_TIME)
             await msg.delete()
             await k.edit_text("<b>Your File/Video is successfully deleted!!! you want again [Get Here](https://t.me/what_if_season_2_hindi_dubb) </b>")
-            quote=True,
-            disable_web_page_preview=True,            
-            reply_markup=InlineKeyboardMarkup(  
-                    [
-                     [
-                         InlineKeyboardButton('🤖 want again File', url='https://t.me/what_if_season_2_hindi_dubb'),
-                         InlineKeyboardButton('🔍 sᴜᴘᴘᴏʀᴛ ɢʀᴏᴜᴘ', url='https://t.me/+ccx-5xVHyro3ZjNl')
-                     ]
-                    ]
-           )
+
             return
         except:
             pass
