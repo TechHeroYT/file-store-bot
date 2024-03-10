@@ -108,15 +108,6 @@ async def start(client, message):
                 f_caption = f"{title}"
             try:
                 h = await message.reply_text(f"<b><u>❗️❗️❗️IMPORTANT❗️️❗️❗️</u></b>\n\nThis Movie File/Video will be deleted in <b><u>{AUTO_DELETE} minutes</u> 🫥 <i></b>(Due to Copyright Issues)</i>.\n\n<b><i>Please forward this File/Video to your Saved Messages and Start Download there </b>")
-                disable_web_page_preview=True,                    
-                reply_markup=InlineKeyboardMarkup(  
-                    [
-                     [
-                         InlineKeyboardButton('🤖 want again File', url='https://t.me/what_if_season_2_hindi_dubb'),
-                         InlineKeyboardButton('🔍 sᴜᴘᴘᴏʀᴛ ɢʀᴏᴜᴘ', url='https://t.me/+ccx-5xVHyro3ZjNl')
-                     ]
-                    ]
-                )
                 quote=True,
 
                 k = await client.send_cached_media(
@@ -171,16 +162,7 @@ async def start(client, message):
                     file_name = getattr(media, 'file_name', '')
                     f_caption = getattr(msg, 'caption', file_name)
                 try:
-                    h = await message.reply_text(f"<b><u>❗️❗️❗️IMPORTANT❗️️❗️❗️</u></b>\n\nThis Movie File/Video will be deleted in <b><u>{AUTO_DELETE} minutes</u> 🫥 <i></b>(Due to Copyright Issues)</i>.\n\n<b><i>Please forward this File/Video to your Saved Messages and Start Download there you want again [Get Here](https://t.me/what_if_season_2_hindi_dubb)</b>")
-                disable_web_page_preview=True,                    
-                reply_markup=InlineKeyboardMarkup(  
-                    [
-                     [
-                         InlineKeyboardButton('🤖 want again File', url='https://t.me/what_if_season_2_hindi_dubb'),
-                         InlineKeyboardButton('🔍 sᴜᴘᴘᴏʀᴛ ɢʀᴏᴜᴘ', url='https://t.me/+ccx-5xVHyro3ZjNl')
-                     ]
-                    ]
-                )                    
+                    h = await message.reply_text(f"<b><u>❗️❗️❗️IMPORTANT❗️️❗️❗️</u></b>\n\nThis Movie File/Video will be deleted in <b><u>{AUTO_DELETE} minutes</u> 🫥 <i></b>(Due to Copyright Issues)</i>.\n\n<b><i>Please forward this File/Video to your Saved Messages and Start Download there you want again [Get Here](https://t.me/what_if_season_2_hindi_dubb)</b>")             
                     k = await msg.copy(message.chat.id, caption=f_caption, protect_content=True if protect == "/pbatch" else False)
                     
                     asyncio.create_task(delete_after_delay(k, AUTO_DELETE_TIME))
@@ -428,7 +410,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                 quote=True,
                 disable_web_page_preview=True,
                 reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("🚀 Fast Download 🚀", url= download),  # we download Link
-                                                    InlineKeyboardButton('🖥️ Watch online 🖥️', url= download),  # web stream Link
+                                                    InlineKeyboardButton('🖥️ Watch online 🖥️', url= stream),  # web stream Link
                                                     InlineKeyboardButton('🤖 want again File', url='https://t.me/what_if_season_2_hindi_dubb'),
                                                     InlineKeyboardButton('🔍 sᴜᴘᴘᴏʀᴛ ɢʀᴏᴜᴘ', url='https://t.me/+ccx-5xVHyro3ZjNl')]])
             )
