@@ -427,8 +427,8 @@ async def cb_handler(client: Client, query: CallbackQuery):
                 text=f"•• ʟɪɴᴋ ɢᴇɴᴇʀᴀᴛᴇᴅ ꜰᴏʀ ɪᴅ #{user_id} \n•• ᴜꜱᴇʀɴᴀᴍᴇ : {username} \n\n•• ᖴᎥᒪᗴ Nᗩᗰᗴ : {fileName}",
                 quote=True,
                 disable_web_page_preview=True,
-                reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("🚀 Fast Download 🚀", url=https://file-store-bot-part1-hero.onrender.com),  # we download Link
-                                                    InlineKeyboardButton('🖥️ Watch online 🖥️', url=https://file-store-bot-part1-hero.onrender.com),  # web stream Link
+                reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("🚀 Fast Download 🚀", url= download),  # we download Link
+                                                    InlineKeyboardButton('🖥️ Watch online 🖥️', url= download),  # web stream Link
                                                     InlineKeyboardButton('🤖 want again File', url='https://t.me/what_if_season_2_hindi_dubb'),
                                                     InlineKeyboardButton('🔍 sᴜᴘᴘᴏʀᴛ ɢʀᴏᴜᴘ', url='https://t.me/+ccx-5xVHyro3ZjNl')]])
             )
@@ -436,8 +436,8 @@ async def cb_handler(client: Client, query: CallbackQuery):
                 text="•• ʟɪɴᴋ ɢᴇɴᴇʀᴀᴛᴇᴅ ☠︎⚔",
                 quote=True,
                 disable_web_page_preview=True,
-                reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("🚀 Fast Download 🚀", url=https://file-store-bot-part1-hero.onrender.com),  # we download Link
-                                                    InlineKeyboardButton('🖥️ Watch online 🖥️', url=https://file-store-bot-part1-hero.onrender.com),  # web stream Link
+                reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("🚀 Fast Download 🚀", url= download),  # we download Link
+                                                    InlineKeyboardButton('🖥️ Watch online 🖥️', url= stream),  # web stream Link
                                                     InlineKeyboardButton('🤖 want again File', url='https://t.me/what_if_season_2_hindi_dubb'),
                                                     InlineKeyboardButton('🔍 sᴜᴘᴘᴏʀᴛ ɢʀᴏᴜᴘ', url='https://t.me/+ccx-5xVHyro3ZjNl')]])
             )
