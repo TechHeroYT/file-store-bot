@@ -149,15 +149,7 @@ async def start(client, message):
         sts = await message.reply("**🔺 ᴘʟᴇᴀsᴇ ᴡᴀɪᴛ**")
         b_string = data.split("-", 1)[1]
         decoded = (base64.urlsafe_b64decode(b_string + "=" * (-len(b_string) % 4))).decode("ascii")
-        await message.reply_text(f"<b><u>❗️❗️❗️IMPORTANT❗️️❗️❗️</u></b>\n\nThis Movie File/Video will be deleted in <b><u>{AUTO_DELETE} mins</u> 🫥 <i></b>(Due to Copyright Issues)</i>.\n\n<b><i>Please forward this File/Video to your Saved Messages and Start Download there you want again [Get Here](https://t.me/what_if_season_2_hindi_dubb)</b>")                  
-                reply_markup=InlineKeyboardMarkup(  
-                    [
-                     [
-                         InlineKeyboardButton('🤖 want again File', url='https://t.me/what_if_season_2_hindi_dubb'),
-                         InlineKeyboardButton('🔍 sᴜᴘᴘᴏʀᴛ ɢʀᴏᴜᴘ', url='https://t.me/+ccx-5xVHyro3ZjNl')
-                     ]
-                    ]
-                )
+        await message.reply_text(f"<b><u>❗️❗️❗️IMPORTANT❗️️❗️❗️</u></b>\n\nThis Movie File/Video will be deleted in <b><u>{AUTO_DELETE} mins</u> 🫥 <i></b>(Due to Copyright Issues)</i>.\n\n<b><i>Please forward this File/Video to your Saved Messages and Start Download there you want again [Get Here](https://t.me/what_if_season_2_hindi_dubb)</b>")                
                
         try:
             f_msg_id, l_msg_id, f_chat_id, protect = decoded.split("_", 3)
