@@ -217,8 +217,10 @@ async def start(client, message):
                 reply_markup=InlineKeyboardMarkup(
                     [
                      [
-                         InlineKeyboardButton('🚀 Fast Download / Watch Online🖥️', callback_data=f'generate_stream_link:{file_id}'),
-                         InlineKeyboardButton('🤖 want again File', url='https://t.me/what_if_season_2_hindi_dubb'),
+                         InlineKeyboardButton('🚀 Fast Download / Watch Online🖥️', callback_data=f'generate_stream_link:{file_id}')],
+                     [
+                         InlineKeyboardButton('🤖 want again File', url='https://t.me/what_if_season_2_hindi_dubb')],  
+                     [
                          InlineKeyboardButton('🔍 sᴜᴘᴘᴏʀᴛ ɢʀᴏᴜᴘ', url='https://t.me/+ccx-5xVHyro3ZjNl')
                      ]
                     ]
@@ -410,18 +412,20 @@ async def cb_handler(client: Client, query: CallbackQuery):
                 quote=True,
                 disable_web_page_preview=True,
                 reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("🚀 Fast Download 🚀", url= download),  # we download Link
-                                                    InlineKeyboardButton('🖥️ Watch online 🖥️', url= stream),  # web stream Link
-                                                    InlineKeyboardButton('🤖 want again File', url='https://t.me/what_if_season_2_hindi_dubb'),
-                                                    InlineKeyboardButton('🔍 sᴜᴘᴘᴏʀᴛ ɢʀᴏᴜᴘ', url='https://t.me/+ccx-5xVHyro3ZjNl')]])
-            )
+                                                    InlineKeyboardButton('🖥️ Watch online 🖥️', url= stream)]])  # web stream Link
+             )
             await query.message.reply_text(
                 text="•• ʟɪɴᴋ ɢᴇɴᴇʀᴀᴛᴇᴅ ☠︎⚔",
                 quote=True,
                 disable_web_page_preview=True,
-                reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("🚀 Fast Download 🚀", url= download),  # we download Link
-                                                    InlineKeyboardButton('🖥️ Watch online 🖥️', url= stream),  # web stream Link
-                                                    InlineKeyboardButton('🤖 want again File', url='https://t.me/what_if_season_2_hindi_dubb'),
-                                                    InlineKeyboardButton('🔍 sᴜᴘᴘᴏʀᴛ ɢʀᴏᴜᴘ', url='https://t.me/+ccx-5xVHyro3ZjNl')]])
+                reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("🚀 Fast Download 🚀", url= download)],  # we download Link
+                                                [
+                                                    InlineKeyboardButton('🖥️ Watch online 🖥️', url= stream)],  # web stream Link
+                                               [
+                                                    InlineKeyboardButton('🤖 want again File', url='https://t.me/what_if_season_2_hindi_dubb')],
+                                               [
+                                                    InlineKeyboardButton('🔍 sᴜᴘᴘᴏʀᴛ ɢʀᴏᴜᴘ', url='https://t.me/+ccx-5xVHyro3ZjNl')]
+                                                  ]
             )
         except Exception as e:
             print(e)  # print the error message
