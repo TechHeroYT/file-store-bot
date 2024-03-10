@@ -56,7 +56,7 @@ async def start(client, message):
             InlineKeyboardButton( '💝 sᴜʙsᴄʀɪʙᴇ ᴍʏ ʏᴏᴜᴛᴜʙᴇ ᴄʜᴀɴɴᴇʟ', url='https://youtube.com/@sastamarvel01?si=KiYYZ5mByFO-O_fl')
             ],[
             InlineKeyboardButton('🔍 sᴜᴘᴘᴏʀᴛ ɢʀᴏᴜᴘ', url='https://t.me/+ccx-5xVHyro3ZjNl'),
-            InlineKeyboardButton('🤖 ᴜᴘᴅᴀᴛᴇ ᴄʜᴀɴɴᴇʟ', url='https://t.me/Avatar_last_airbender_3_hindi')
+            InlineKeyboardButton('🤖 ᴜᴘᴅᴀᴛᴇ ᴄʜᴀɴɴᴇʟ', url='https://t.me/what_if_season_2_hindi_dubb')
             ],[
             InlineKeyboardButton('🤖 ᴄʀᴇᴀᴛᴇ ʏᴏᴜʀ ᴏᴡɴ ᴄʟᴏɴᴇ ʙᴏᴛ', callback_data='clone')
             ],[
@@ -108,16 +108,17 @@ async def start(client, message):
                 f_caption = f"{title}"
             try:
                 h = await message.reply_text(f"<b><u>❗️❗️❗️IMPORTANT❗️️❗️❗️</u></b>\n\nThis Movie File/Video will be deleted in <b><u>{AUTO_DELETE} minutes</u> 🫥 <i></b>(Due to Copyright Issues)</i>.\n\n<b><i>Please forward this File/Video to your Saved Messages and Start Download there </b>")
-                quote=True,
                 disable_web_page_preview=True,                    
                 reply_markup=InlineKeyboardMarkup(  
                     [
                      [
-                         InlineKeyboardButton('🤖 want again File', url='https://t.me/Avatar_last_airbender_3_hindi'),
+                         InlineKeyboardButton('🤖 want again File', url='https://t.me/what_if_season_2_hindi_dubb'),
                          InlineKeyboardButton('🔍 sᴜᴘᴘᴏʀᴛ ɢʀᴏᴜᴘ', url='https://t.me/+ccx-5xVHyro3ZjNl')
                      ]
                     ]
                 )
+                quote=True,
+
                 k = await client.send_cached_media(
                     chat_id=message.from_user.id,
                     file_id=msg.get("file_id"),
@@ -148,7 +149,16 @@ async def start(client, message):
         sts = await message.reply("**🔺 ᴘʟᴇᴀsᴇ ᴡᴀɪᴛ**")
         b_string = data.split("-", 1)[1]
         decoded = (base64.urlsafe_b64decode(b_string + "=" * (-len(b_string) % 4))).decode("ascii")
-        await message.reply_text(f"<b><u>❗️❗️❗️IMPORTANT❗️️❗️❗️</u></b>\n\nThis Movie File/Video will be deleted in <b><u>{AUTO_DELETE} mins</u> 🫥 <i></b>(Due to Copyright Issues)</i>.\n\n<b><i>Please forward this File/Video to your Saved Messages and Start Download there you want again [Get Here](https://t.me/Avatar_last_airbender_3_hindi)</b>")
+        await message.reply_text(f"<b><u>❗️❗️❗️IMPORTANT❗️️❗️❗️</u></b>\n\nThis Movie File/Video will be deleted in <b><u>{AUTO_DELETE} mins</u> 🫥 <i></b>(Due to Copyright Issues)</i>.\n\n<b><i>Please forward this File/Video to your Saved Messages and Start Download there you want again [Get Here](https://t.me/what_if_season_2_hindi_dubb)</b>")
+                disable_web_page_preview=True,                    
+                reply_markup=InlineKeyboardMarkup(  
+                    [
+                     [
+                         InlineKeyboardButton('🤖 want again File', url='https://t.me/what_if_season_2_hindi_dubb'),
+                         InlineKeyboardButton('🔍 sᴜᴘᴘᴏʀᴛ ɢʀᴏᴜᴘ', url='https://t.me/+ccx-5xVHyro3ZjNl')
+                     ]
+                    ]
+                )
                
         try:
             f_msg_id, l_msg_id, f_chat_id, protect = decoded.split("_", 3)
@@ -171,6 +181,15 @@ async def start(client, message):
                     f_caption = getattr(msg, 'caption', file_name)
                 try:
                     h = await message.reply_text(f"<b><u>❗️❗️❗️IMPORTANT❗️️❗️❗️</u></b>\n\nThis Movie File/Video will be deleted in <b><u>{AUTO_DELETE} minutes</u> 🫥 <i></b>(Due to Copyright Issues)</i>.\n\n<b><i>Please forward this File/Video to your Saved Messages and Start Download there you want again [Get Here](https://t.me/what_if_season_2_hindi_dubb)</b>")
+                disable_web_page_preview=True,                    
+                reply_markup=InlineKeyboardMarkup(  
+                    [
+                     [
+                         InlineKeyboardButton('🤖 want again File', url='https://t.me/what_if_season_2_hindi_dubb'),
+                         InlineKeyboardButton('🔍 sᴜᴘᴘᴏʀᴛ ɢʀᴏᴜᴘ', url='https://t.me/+ccx-5xVHyro3ZjNl')
+                     ]
+                    ]
+                )                    
                     k = await msg.copy(message.chat.id, caption=f_caption, protect_content=True if protect == "/pbatch" else False)
                     
                     asyncio.create_task(delete_after_delay(k, AUTO_DELETE_TIME))
@@ -225,7 +244,9 @@ async def start(client, message):
                 reply_markup=InlineKeyboardMarkup(
                     [
                      [
-                         InlineKeyboardButton('🚀 Fast Download / Watch Online🖥️', callback_data=f'generate_stream_link:{file_id}')
+                         InlineKeyboardButton('🚀 Fast Download / Watch Online🖥️', callback_data=f'generate_stream_link:{file_id}'),
+                         InlineKeyboardButton('🤖 want again File', url='https://t.me/what_if_season_2_hindi_dubb'),
+                         InlineKeyboardButton('🔍 sᴜᴘᴘᴏʀᴛ ɢʀᴏᴜᴘ', url='https://t.me/+ccx-5xVHyro3ZjNl')
                      ]
                     ]
                 )
@@ -234,7 +255,7 @@ async def start(client, message):
             await asyncio.sleep(AUTO_DELETE_TIME)
             await msg.delete()
             await g.delete()
-            await k.edit_text("<b>Your File/Video is successfully deleted!!! You Want Again [Get Here](https://t.me/Avatar_last_airbender_3_hindi)</b>")
+            await k.edit_text("<b>Your File/Video is successfully deleted!!! You Want Again [Get Here](https://t.me/what_if_season_2_hindi_dubb)</b>")
             return
         except:
             pass
@@ -328,7 +349,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             InlineKeyboardButton( '💝 sᴜʙsᴄʀɪʙᴇ ᴍʏ ʏᴏᴜᴛᴜʙᴇ ᴄʜᴀɴɴᴇʟ', url='https://youtube.com/@sastamarvel01?si=KiYYZ5mByFO-O_fl')
             ],[
             InlineKeyboardButton('🔍 sᴜᴘᴘᴏʀᴛ ɢʀᴏᴜᴘ', url='https://t.me/+ccx-5xVHyro3ZjNl'),
-            InlineKeyboardButton('🤖 ᴜᴘᴅᴀᴛᴇ ᴄʜᴀɴɴᴇʟ', url='https://t.me/Avatar_last_airbender_3_hindi')
+            InlineKeyboardButton('🤖 ᴜᴘᴅᴀᴛᴇ ᴄʜᴀɴɴᴇʟ', url='https://t.me/what_if_season_2_hindi_dubb')
             ],[
             InlineKeyboardButton('🤖 ᴄʀᴇᴀᴛᴇ ʏᴏᴜʀ ᴏᴡɴ ᴄʟᴏɴᴇ ʙᴏᴛ', callback_data='clone')
             ],[
@@ -416,14 +437,18 @@ async def cb_handler(client: Client, query: CallbackQuery):
                 quote=True,
                 disable_web_page_preview=True,
                 reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("🚀 Fast Download 🚀", url=download),  # we download Link
-                                                    InlineKeyboardButton('🖥️ Watch online 🖥️', url=stream)]])  # web stream Link
+                                                    InlineKeyboardButton('🖥️ Watch online 🖥️', url=stream),  # web stream Link
+                                                    InlineKeyboardButton('🤖 want again File', url='https://t.me/what_if_season_2_hindi_dubb'),
+                                                    InlineKeyboardButton('🔍 sᴜᴘᴘᴏʀᴛ ɢʀᴏᴜᴘ', url='https://t.me/+ccx-5xVHyro3ZjNl')]])
             )
             await query.message.reply_text(
                 text="•• ʟɪɴᴋ ɢᴇɴᴇʀᴀᴛᴇᴅ ☠︎⚔",
                 quote=True,
                 disable_web_page_preview=True,
                 reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("🚀 Fast Download 🚀", url=download),  # we download Link
-                                                    InlineKeyboardButton('🖥️ Watch online 🖥️', url=stream)]])  # web stream Link
+                                                    InlineKeyboardButton('🖥️ Watch online 🖥️', url=stream),  # web stream Link
+                                                    InlineKeyboardButton('🤖 want again File', url='https://t.me/what_if_season_2_hindi_dubb'),
+                                                    InlineKeyboardButton('🔍 sᴜᴘᴘᴏʀᴛ ɢʀᴏᴜᴘ', url='https://t.me/+ccx-5xVHyro3ZjNl')]])
             )
         except Exception as e:
             print(e)  # print the error message
