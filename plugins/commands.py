@@ -64,6 +64,9 @@ async def start(client, message):
             InlineKeyboardButton('😊 ᴀʙᴏᴜᴛ', callback_data='about')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
+      m=await message.reply_sticker("CAACAgUAAxkBAAIhuGTHNIDjN6W-9OgK2xPXQSiDYpm-AAIFAgACD_PRVn7ikCL5fe76HgQ") 
+        await asyncio.sleep(1)
+        await m.delete()
         me2 = (await client.get_me()).mention
         await message.reply_photo(
             photo=random.choice(PICS),
@@ -219,7 +222,7 @@ async def start(client, message):
                      [
                          InlineKeyboardButton('🚀 Fast Download / Watch Online🖥️', callback_data=f'generate_stream_link:{file_id}')],
                      [
-                         InlineKeyboardButton('🤖 want again File', url='https://t.me/what_if_season_2_hindi_dubb')],  
+                         InlineKeyboardButton('🤖 WANT FILE AGAIN ', url='https://t.me/what_if_season_2_hindi_dubb')],  
                      [
                          InlineKeyboardButton('🔍 sᴜᴘᴘᴏʀᴛ ɢʀᴏᴜᴘ', url='https://t.me/+ccx-5xVHyro3ZjNl')
                      ]
@@ -422,7 +425,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                                                 [
                                                     InlineKeyboardButton('🖥️ Watch online 🖥️', url= stream)],  # web stream Link
                                                [
-                                                    InlineKeyboardButton('🤖 want again File', url='https://t.me/what_if_season_2_hindi_dubb')],
+                                                    InlineKeyboardButton('🤖 WANT AGAIN  FILE', url='https://t.me/what_if_season_2_hindi_dubb')],
                                                [
                                                     InlineKeyboardButton('🔍 sᴜᴘᴘᴏʀᴛ ɢʀᴏᴜᴘ', url='https://t.me/+ccx-5xVHyro3ZjNl')]
                                                   ]
