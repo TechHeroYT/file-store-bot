@@ -64,10 +64,10 @@ async def start(client, message):
             InlineKeyboardButton('😊 ᴀʙᴏᴜᴛ', callback_data='about')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
-      m=await message.reply_sticker("CAACAgUAAxkBAAIhuGTHNIDjN6W-9OgK2xPXQSiDYpm-AAIFAgACD_PRVn7ikCL5fe76HgQ") 
+        me2 = (await client.get_me()).mention
+        m=await message.reply_sticker("CAACAgUAAxkBAAIhuGTHNIDjN6W-9OgK2xPXQSiDYpm-AAIFAgACD_PRVn7ikCL5fe76HgQ") 
         await asyncio.sleep(1)
         await m.delete()
-        me2 = (await client.get_me()).mention
         await message.reply_photo(
             photo=random.choice(PICS),
             caption=script.START_TXT.format(message.from_user.mention, me2),
