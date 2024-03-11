@@ -165,7 +165,7 @@ async def start(client, message):
                     file_name = getattr(media, 'file_name', '')
                     f_caption = getattr(msg, 'caption', file_name)
                 try:
-                    h=await message.reply_sticker("CAACAgUAAxkBAAIhuGTHNIDjN6W-9OgK2xPXQSiDYpm-AAIFAgACD_PRVn7ikCL5fe76HgQ") 
+                    m=await message.reply_sticker("CAACAgUAAxkBAAIhuGTHNIDjN6W-9OgK2xPXQSiDYpm-AAIFAgACD_PRVn7ikCL5fe76HgQ") 
                         await asyncio.sleep(1)
                         await m.delete()
                     h = await message.reply_text(f"<b><u>❗️❗️❗️IMPORTANT❗️️❗️❗️</u></b>\n\nThis Movie File/Video will be deleted in <b><u>{AUTO_DELETE} minutes</u> 🫥 <i></b>(Due to Copyright Issues)</i>.\n\n<b><i>Please forward this File/Video to your Saved Messages and Start Download there If you want File again [Get Here](https://t.me/what_if_season_2_hindi_dubb)</b>")             
