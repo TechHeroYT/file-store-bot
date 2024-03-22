@@ -10,11 +10,11 @@ class script(object):
     
 Qury: more movie,anime,web-serires in hindi [Get Here](https://t.me/+ccx-5xVHyro3ZjNl)
 
-Important : join befor download/save other wish ban☠ [subscribe](https://t.me/what_if_season_2_hindi_dubb) 
+Important : join befor download/save other wish ban☠ [subscribe](https://t.me/aapna_Movies) 
 
 sɪᴢᴇ ⚙️: {file_size}
 
-Jᴏɪɴ [ᴜᴘᴅᴀᴛᴇ ᴄʜᴀɴɴᴇʟ](https://t.me/what_if_season_2_hindi_dubb)</b>""" 
+Jᴏɪɴ [ᴜᴘᴅᴀᴛᴇ ᴄʜᴀɴɴᴇʟ](https://t.me/aapna_Movies)</b>""" 
 
 
 
@@ -42,7 +42,7 @@ Cᴜʀʀᴇɴᴛ Sʜᴏʀᴛᴇɴᴇʀ API:</b> `{shortener_api}`"""
 
 📚 ʟɪʙʀᴀʀʏ: <a href=https://docs.pyrogram.org>𝐏𝐲𝐫𝐨𝐠𝐫𝐚𝐦</a>
 
-🧑🏻‍💻 ᴅᴇᴠᴇʟᴏᴘᴇʀ: <a href=https://t.me/hero_botss>𝐓𝐞𝐜𝐡 </a>
+🧑🏻‍💻 ᴅᴇᴠᴇʟᴏᴘᴇʀ: <a href=https://t.me/hero_botss>𝐓𝐞𝐜𝐡  </a>
 
 👥 sᴜᴘᴘᴏʀᴛ ɢʀᴏᴜᴘ: <a href=https://t.me/+ccx-5xVHyro3ZjNl> 𝐒𝐮𝐩𝐩𝐨𝐫𝐭</a>
 
@@ -105,7 +105,7 @@ Cᴜʀʀᴇɴᴛ Sʜᴏʀᴛᴇɴᴇʀ API:</b> `{shortener_api}`"""
 🔻 /api - sᴇᴛ ʏᴏᴜʀ ᴜʀʟ sʜᴏʀᴛɴᴇʀ ᴀᴄᴄᴏᴜɴᴛ ᴀᴘɪ
 ᴇx - /api ʙᴀᴏᴡɢᴡᴋʟᴀᴀʙᴀᴋʟ
 
-🔻 /broadcast - ʀᴇᴘʟʏ ᴛᴏ ᴛʜɪs ᴄᴏᴍᴍᴀɴᴅ ᴛᴏ ᴀ ᴍᴇssᴀɢᴇ ᴛᴏ ʙʀᴏᴀᴅᴄᴀsᴛ [ʙᴏᴛ ᴏᴡɴᴇʀ ᴏɴʟʏ](https://t.me/what_if_season_2_hindi_dubb) </b>"""
+🔻 /broadcast - ʀᴇᴘʟʏ ᴛᴏ ᴛʜɪs ᴄᴏᴍᴍᴀɴᴅ ᴛᴏ ᴀ ᴍᴇssᴀɢᴇ ᴛᴏ ʙʀᴏᴀᴅᴄᴀsᴛ [ʙᴏᴛ ᴏᴡɴᴇʀ ᴏɴʟʏ](https://t.me/aapna_Movies) </b>"""
 
 
 
