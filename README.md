@@ -1,8 +1,8 @@
 <p align="center">
-  <img src="'https://graph.org/file/b4a9b6e4ecc76c1183d6d.jpg" alt="HEro-FILE-STORE-BOT Logo">
+  <img src="'https://graph.org/file/b4a9b6e4ecc76c1183d6d.jpg" alt="Tech HEro-FILE-STORE-BOT Logo">
 </p>
 <h1 align="center">
-  HEro FILE STORE BOT
+  Tech HEro FILE STORE BOT
 </h1>
 
 ![Typing SVG](https://readme-typing-svg.herokuapp.com/?lines=Welcome+To+HEro-FILE-STORE-BOT;A+Highly+Advance+File+Store+Bot;Made+By+Yt-@Hero_botss!;With+Clone+Feature+Stream/Download+Link;Custom+Url+Shortner+Auto+Delete+Feature;A+Bot+With+Fully+Advanced+Feature!;Must+Give+Credit+To+Tech+HEro;Because+He+Public+The+Paid+Repo;Thank+You!)
