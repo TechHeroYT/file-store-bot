@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="'https://te.legra.ph/file/66604e5911df5a0c43ffa.jpg" alt="HEro-FILE-STORE-BOT Logo">
+  <img src="'https://graph.org/file/b4a9b6e4ecc76c1183d6d.jpg" alt="HEro-FILE-STORE-BOT Logo">
 </p>
 <h1 align="center">
   HEro FILE STORE BOT
