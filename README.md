@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="'https://graph.org/file/b4a9b6e4ecc76c1183d6d.jpg" alt="Tech HEro-FILE-STORE-BOT Logo">
+  <img src="https://graph.org/file/b4a9b6e4ecc76c1183d6d.jpg" alt="Tech HEro-FILE-STORE-BOT Logo">
 </p>
 <h1 align="center">
   Tech HEro FILE STORE BOT
