@@ -62,7 +62,7 @@ PUBLIC_FILE_STORE = is_enabled((environ.get('PUBLIC_FILE_STORE', "True")), True)
 
 # File Stream Config
 class Var(object):
-    MULTI_CLIENT = False
+    MULTI_CLIENT = True
     name = str(getenv('name', 'filetolinkvjbot'))
     SLEEP_THRESHOLD = int(getenv('SLEEP_THRESHOLD', '60'))
     WORKERS = int(getenv('WORKERS', '4'))
