@@ -115,7 +115,7 @@ async def start(client, message):
                 m=await message.reply_sticker("CAACAgUAAxkBAAIhuGTHNIDjN6W-9OgK2xPXQSiDYpm-AAIFAgACD_PRVn7ikCL5fe76HgQ") 
                 await asyncio.sleep(1)
                 await m.delete()
-                h = await message.reply_text(" ")
+                h = await message.reply_text(f"<b><u>❗️❗️❗️IMPORTANT❗️️❗️❗️</u></b>\n\nThis Movie File/Video will be deleted in <b><u>{AUTO_DELETE} minutes</u> 🫥 <i></b>(Due to Copyright Issues)</i>.\n\n<b><i>Please forward this File/Video to your Saved Messages and Start Download there </b>")
                 quote=True,
 
                 k = await client.send_cached_media(
@@ -148,7 +148,7 @@ async def start(client, message):
         sts = await message.reply("**🔺 ᴘʟᴇᴀsᴇ ᴡᴀɪᴛ**")
         b_string = data.split("-", 1)[1]
         decoded = (base64.urlsafe_b64decode(b_string + "=" * (-len(b_string) % 4))).decode("ascii")
-        await message.reply_text(" ")                
+        await message.reply_text(f"<b><u>❗️❗️❗️IMPORTANT❗️️❗️❗️</u></b>\n\nThis Movie File/Video will be deleted in <b><u>{AUTO_DELETE} mins</u> 🫥 <i></b>(Due to Copyright Issues)</i>.\n\n<b><i>Please forward this File/Video to your Saved Messages and Start Download there you want again @group_discd</b>")                
                
         try:
             f_msg_id, l_msg_id, f_chat_id, protect = decoded.split("_", 3)
@@ -170,7 +170,7 @@ async def start(client, message):
                     file_name = getattr(media, 'file_name', '')
                     f_caption = getattr(msg, 'caption', file_name)
                 try:
-                    h = await message.reply_text(" ")             
+                    h = await message.reply_text(f"<b><u>❗️❗️❗️IMPORTANT❗️️❗️❗️</u></b>\n\nThis Movie File/Video will be deleted in <b><u>{AUTO_DELETE} minutes</u> 🫥 <i></b>(Due to Copyright Issues)</i>.\n\n<b><i>Please forward this File/Video to your Saved Messages and Start Download there If you want File again @group_discd</b>")             
                     k = await msg.copy(message.chat.id, caption=f_caption, protect_content=True if protect == "/pbatch" else False)
                     
                     asyncio.create_task(delete_after_delay(k, AUTO_DELETE_TIME))
@@ -216,7 +216,22 @@ async def start(client, message):
                     f_caption=CUSTOM_FILE_CAPTION.format(file_name= '' if title is None else title, file_size='' if size is None else size, file_caption='')
                 except:
                     return
-            k = await msg.reply("")
+            
+            await msg.edit_caption(f_caption)        
+            m=await message.reply_sticker("CAACAgUAAxkBAAIhuGTHNIDjN6W-9OgK2xPXQSiDYpm-AAIFAgACD_PRVn7ikCL5fe76HgQ") 
+            g = await msg.reply_text(
+                text=f"**•• ʏᴏᴜ ᴄᴀɴ ɢᴇɴᴇʀᴀᴛᴇ ᴏɴʟɪɴᴇ sᴛʀᴇᴀᴍ ʟɪɴᴋ ᴏғ ʏᴏᴜʀ ғɪʟᴇ ᴀɴᴅ ᴀʟsᴏ ғᴀsᴛ ᴅᴏᴡɴʟᴏᴀᴅ ʟɪɴᴋ ғᴏʀ ʏᴏᴜʀ ғɪʟᴇ ᴄʟɪᴄᴋɪɴɢ ᴏɴ ʙᴇʟᴏᴡ ʙᴜᴛᴛᴏɴ 👇**",
+                quote=True,
+                disable_web_page_preview=True,
+                reply_markup=InlineKeyboardMarkup(
+                    [
+                     [
+                         InlineKeyboardButton('🚀 New Anime Update🖥️', url="https://t.me/group_discd")]
+                    ]
+                )
+            )
+            m = await message.reply_sticker("CAACAgUAAxkBAAIhuGTHNIDjN6W-9OgK2xPXQSiDYpm-AAIFAgACD_PRVn7ikCL5fe76HgQ") 
+            k = await msg.reply(f"<b><u>❗️❗️❗️IMPORTANT❗️️❗️❗️</u></b>\n\nThis Movie File/Video will be deleted in <b><u>{AUTO_DELETE} mins</u> 🫥 <i></b>(Due to Copyright Issues)</i>.\n\n<b><i>Please forward this File/Video to your Saved Messages and Start Download there You Want Again @group_discd </i></b>",quote=True)
             await asyncio.sleep(AUTO_DELETE_TIME)
             await msg.delete()
             await g.delete()
@@ -398,7 +413,11 @@ async def cb_handler(client: Client, query: CallbackQuery):
             fileName = {quote_plus(get_name(log_msg))}
             stream = f"{Var.URL}watch/{str(log_msg.id)}/{quote_plus(get_name(log_msg))}?hash={get_hash(log_msg)}"
             download = f"{Var.URL}{str(log_msg.id)}/{quote_plus(get_name(log_msg))}?hash={get_hash(log_msg)}"
-            
+
+            m = await message.reply_sticker("CAACAgUAAxkBAAIhuGTHNIDjN6W-9OgK2xPXQSiDYpm-AAIFAgACD_PRVn7ikCL5fe76HgQ") 
+            await asyncio.sleep(1)
+            await m.delete()
+        
             xo = await query.message.reply_text(f'👾')
             await asyncio.sleep(1)
             await xo.delete()
@@ -407,16 +426,16 @@ async def cb_handler(client: Client, query: CallbackQuery):
                 text=f"•• ʟɪɴᴋ ɢᴇɴᴇʀᴀᴛᴇᴅ ꜰᴏʀ ɪᴅ #{user_id} \n•• ᴜꜱᴇʀɴᴀᴍᴇ : {username} \n\n•• ᖴᎥᒪᗴ Nᗩᗰᗴ : {fileName}",
                 quote=True,
                 disable_web_page_preview=True,
-                reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("🚀 Fast Download 🚀", url=download),  # we download Link
-                                                    InlineKeyboardButton('🖥️ Watch online 🖥️', url=stream)]])  # web stream Link
+                reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("🚀 Fast Download 🚀", url= download),  # we download Link
+                                                    InlineKeyboardButton('🖥️ Watch online 🖥️', url= stream)]])  # web stream Link
              )
             await query.message.reply_text(
                 text="•• ʟɪɴᴋ ɢᴇɴᴇʀᴀᴛᴇᴅ ☠︎⚔",
                 quote=True,
                 disable_web_page_preview=True,
-                reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("🚀 Fast Download 🚀", url=download)],  # we download Link
+                reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("🚀 Fast Download 🚀", url= download)],  # we download Link
                                                 [
-                                                    InlineKeyboardButton('🖥️ Watch online 🖥️', url=stream)],  # web stream Link
+                                                    InlineKeyboardButton('🖥️ Watch online 🖥️', url= stream)],  # web stream Link
                                                [
                                                     InlineKeyboardButton('📁 Want File again ', url='https://t.me/aapna_Movies')],
                                                [
